@@ -1,0 +1,47 @@
+{
+  "name": "bootstrap5-webpack-boilerplate",
+  "version": "1.0.1",
+  "description": "A simple boilerplate using Bootstrap 5, Webpack and Babel.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode production",
+    "dev": "webpack --config webpack.config.js --mode development --watch",
+    "serve": "serve .",
+    "images": "node ./bin/images.js"
+  },
+  "author": "Dominik Hanke",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noreading/bootstrap5-webpack-boilerplate.git"
+  },
+  "devDependencies": {
+    "aos": "^2.3.4",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@popperjs/core": "^2.9.2",
+    "autoprefixer": "^10.3.3",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^5.1.0",
+    "boxicons": "^2.1.1",
+    "css-loader": "^6.0.0",
+    "dotenv-webpack": "^7.0.3",
+    "fast-glob": "^3.2.7",
+    "mime-types": "^2.1.32",
+    "mini-css-extract-plugin": "^2.2.0",
+    "node-sass": "^6.0.1",
+    "path": "^0.12.7",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^12.1.0",
+    "sharp": "^0.29.0",
+    "serve": "^13.0.2",
+    "style-loader": "^3.2.1",
+    "typed.js": "^2.0.12",
+    "trash": "^7.1.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
