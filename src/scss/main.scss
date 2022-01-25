@@ -11,10 +11,17 @@
 //---------------------------------------------
 // 1. Basics
 //---------------------------------------------
-
-@import "variables";
-@import "bootstrap";
-@import "fonts";
+// cerulean   cosmo    cyborg  darkly  flatly
+// journal    litera   lumen   lux     materia
+// minty      morph    pulse   quartz  sandstone
+// simplex    sketchy  slate   solar   spacelab
+// superhero  united   vapor   yeti    zephyr
+@import "~bootswatch/dist/materia/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/materia/bootswatch";
+//@import "variables";
+//@import "bootstrap";
+//@import "fonts";
 
 //---------------------------------------------
 // 2. Page Layout
@@ -33,8 +40,3 @@ body {
 @import '~aos/dist/aos';
 
 @import './style';
-
-// section {
-//     min-height: 100vh;
-//     align-items: center;
-// }
