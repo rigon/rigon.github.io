@@ -16,10 +16,10 @@
     "url": "https://github.com/noreading/bootstrap5-webpack-boilerplate.git"
   },
   "devDependencies": {
-    "aos": "^2.3.4",
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@popperjs/core": "^2.9.2",
+    "aos": "^2.3.4",
     "autoprefixer": "^10.3.3",
     "babel-loader": "^8.2.2",
     "bootstrap": "^5.1.0",
@@ -35,11 +35,11 @@
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",
     "sass-loader": "^12.1.0",
-    "sharp": "^0.29.0",
     "serve": "^13.0.2",
+    "sharp": "^0.29.0",
     "style-loader": "^3.2.1",
-    "typed.js": "^2.0.12",
     "trash": "^7.1.1",
+    "typed.js": "^2.0.12",
     "url-loader": "^4.1.1",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0"
