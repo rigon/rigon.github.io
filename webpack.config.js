@@ -11,8 +11,8 @@ module.exports = {
 
     // Define the destination directory and filenames of compiled resources
     output: {
-        filename: "js/[name].js",
-        path: path.resolve(__dirname, "./dist")
+        filename: "[name].js",
+        path: path.resolve(__dirname, "./files/dist")
     },
 
     // Define development options
@@ -21,12 +21,12 @@ module.exports = {
     // Define loaders
     module: {
         rules: [
-            {
-                test: /\.(svg)(\?v=\d+\.\d+\.\d+)?$/,
-                use: {
-                    loader: 'url-loader'
-                }
-            },
+            // {
+            //     test: /\.(svg)(\?v=\d+\.\d+\.\d+)?$/,
+            //     use: {
+            //         loader: 'url-loader'
+            //     }
+            // },
 
             // Use babel for JS files
             {
@@ -79,7 +79,7 @@ module.exports = {
 
         // Extracts CSS into separate files
         new MiniCssExtractPlugin({
-            filename: "css/[name].css",
+            filename: "[name].css",
             chunkFilename: "[id].css"
         }),
     ],

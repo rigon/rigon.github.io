@@ -1,15 +1,16 @@
 {
-  "name": "bootstrap5-webpack-boilerplate",
+  "name": "homepage",
   "version": "1.0.1",
-  "description": "A simple boilerplate using Bootstrap 5, Webpack and Babel.",
+  "description": "Rigon's personal webpage",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js --mode production",
     "dev": "webpack --config webpack.config.js --mode development --watch",
+    "pack": "tar zcvf dist.tar.gz -C files/ dist/ ../index.html",
     "serve": "serve .",
     "images": "node ./bin/images.js"
   },
-  "author": "Dominik Hanke",
+  "author": "Ricardo Gonçalves",
   "license": "MIT",
   "repository": {
     "type": "git",
