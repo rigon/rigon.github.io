@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js --mode production",
     "dev": "webpack --config webpack.config.js --mode development --watch",
-    "pack": "tar zcvf dist.tar.gz -C files/ dist/ ../index.html",
+    "pack": "npm run build && tar zcvf dist.tar.gz -C files/ *",
     "serve": "serve .",
     "images": "node ./bin/images.js"
   },

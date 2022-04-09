@@ -100,7 +100,7 @@ on('click', '.mobile-nav-toggle', function(e) {
  */
 on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
-        e.preventDefault()
+        //e.preventDefault()
 
         let body = select('body')
         if (body.classList.contains('mobile-nav-active')) {
