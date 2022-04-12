@@ -9,6 +9,13 @@
 # General
 --------------------------------------------------------------*/
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 a {
   color: $primary;
   text-decoration: none;
@@ -248,7 +255,7 @@ a:hover {
   left: 0;
   right: 0;
 }
-#hero h1 {
+#hero .hero-title {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
@@ -276,7 +283,7 @@ a:hover {
   transition: 0.3s;
 }
 #hero .social-links a:hover {
-  color: $secondary;
+  color: $primary;
 }
 @media (max-width: 992px) {
   #hero {
@@ -296,16 +303,23 @@ a:hover {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+img {
+  max-width: 100%;
+}
+
 section {
   padding: 60px 0;
   overflow: hidden;
+  min-height: 50vh;
 }
-
-.section-title {
+section blockquote {
+  text-align: center;
+}
+.section-title, h1 {
   text-align: center;
   padding-bottom: 30px;
 }
-.section-title h2 {
+.section-title h1, h1 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -313,7 +327,7 @@ section {
   padding-bottom: 20px;
   position: relative;
 }
-.section-title h2::before {
+.section-title h1::before, h1::before {
   content: "";
   position: absolute;
   display: block;
@@ -323,7 +337,7 @@ section {
   bottom: 1px;
   left: calc(50% - 60px);
 }
-.section-title h2::after {
+.section-title h1::after, h1::after {
   content: "";
   position: absolute;
   display: block;
@@ -406,7 +420,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -437,22 +451,26 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Resume
+# Timeline
 --------------------------------------------------------------*/
-.resume .resume-title {
+.timeline h2 {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
   color: $body-color;
 }
-.resume .resume-item {
+.timeline > ul > li {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid $primary;
   position: relative;
+  list-style-type: none;
 }
-.resume .resume-item h4 {
+.timeline > ul > li p {
+  margin-bottom: 0;
+}
+.timeline > ul > li strong:first-child {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -460,24 +478,28 @@ section {
   color: $primary;
   margin-bottom: 10px;
 }
-.resume .resume-item h5 {
+.timeline > ul > li em {
   font-size: 16px;
   background: #f7f8f9;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
+  font-style: normal;
   margin-bottom: 10px;
 }
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-.resume .resume-item:last-child {
+// .publications li dd, .publications li dl {
+//   margin-bottom: 0;
+// }
+// .publications .timeline-item ul {
+//   padding-left: 20px;
+// }
+// .publications .timeline-item ul li {
+//   padding-bottom: 10px;
+// }
+.timeline > ul > li:last-child {
   padding-bottom: 0;
 }
-.resume .resume-item::before {
+.timeline > ul > li::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -859,87 +881,85 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-// .contact .info {
-//   width: 100%;
-//   background: $white;
-// }
-// .contact .info i {
-//   font-size: 20px;
-//   color: $primary;
-//   float: left;
-//   width: 44px;
-//   height: 44px;
-//   background: #eef7ff;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border-radius: 50px;
-//   transition: all 0.3s ease-in-out;
-// }
-// .contact .info h4 {
-//   padding: 0 0 0 60px;
-//   font-size: 22px;
-//   font-weight: 600;
-//   margin-bottom: 5px;
-//   color: $body-color;
-// }
-// .contact .info p {
-//   padding: 0 0 0 60px;
-//   margin-bottom: 0;
-//   font-size: 14px;
-//   color: #728394;
-// }
-// .contact .info .email, .contact .info .phone {
-//   margin-top: 40px;
-// }
-// .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-//   background: $primary;
-//   color: $white;
-// }
-// .contact .php-email-form {
-//   width: 100%;
-//   background: $white;
-// }
-// .contact .php-email-form .form-group {
-//   padding-bottom: 8px;
-// }
-// .contact .php-email-form .error-message {
-//   display: none;
-//   color: $white;
-//   background: #ed3c0d;
-//   text-align: left;
-//   padding: 15px;
-//   font-weight: 600;
-// }
-// .contact .php-email-form .error-message br + br {
-//   margin-top: 25px;
-// }
-// .contact .php-email-form .sent-message {
-//   display: none;
-//   color: $white;
-//   background: #18d26e;
-//   text-align: center;
-//   padding: 15px;
-//   font-weight: 600;
-// }
-// .contact .php-email-form .loading {
-//   display: none;
-//   background: $white;
-//   text-align: center;
-//   padding: 15px;
-// }
-// .contact .php-email-form .loading:before {
-//   content: "";
-//   display: inline-block;
-//   border-radius: 50%;
-//   width: 24px;
-//   height: 24px;
-//   margin: 0 10px -6px 0;
-//   border: 3px solid #18d26e;
-//   border-top-color: #eee;
-//   -webkit-animation: animate-loading 1s linear infinite;
-//   animation: animate-loading 1s linear infinite;
-// }
+.contact .info {
+  width: 100%;
+}
+.contact .info i {
+  font-size: 20px;
+  color: $primary;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eef7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: $body-color;
+}
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: $primary;
+  color: $white;
+}
+.contact .php-email-form {
+  width: 100%;
+}
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+.contact .php-email-form .error-message {
+  display: none;
+  color: $white;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+.contact .php-email-form .sent-message {
+  display: none;
+  color: $white;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .loading {
+  display: none;
+  background: $white;
+  text-align: center;
+  padding: 15px;
+}
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
 // .contact .php-email-form input, .contact .php-email-form textarea {
 //   border-radius: 4px;
 //   box-shadow: none;
@@ -962,22 +982,22 @@ section {
 // .contact .php-email-form button[type=submit]:hover {
 //   background: #0678e3;
 // }
-// @-webkit-keyframes animate-loading {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   100% {
-//     transform: rotate(360deg);
-//   }
-// }
-// @keyframes animate-loading {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   100% {
-//     transform: rotate(360deg);
-//   }
-// }
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*--------------------------------------------------------------
 # Footer

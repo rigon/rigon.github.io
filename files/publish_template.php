@@ -59,11 +59,14 @@
         <nav id="navbar" class="navbar nav-menu">
             <ul>
                 <li><a href="/#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                <li><a href="/#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-                <li><a href="/#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-                <li><a href="/#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-                <li><a href="/#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-                <li><a href="/#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+                <!-- <li><a href="/#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li> -->
+                <!-- <li><a href="/#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li> -->
+                <li><a href="/#projects" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Projects</span></a></li>
+                <li><a href="/#resume" class="nav-link scrollto"><i class="bx bx-book-reader"></i> <span>Resume</span></a></li>
+                <!-- <li><a href="/#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+                <li><a href="/#awards-publications" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Awards &amp; Publications</span></a></li>
+                <li><a href="/#contribute" class="nav-link scrollto"><i class="bx bx-donate-heart"></i> <span>Contribute</span></a></li>
+                <li><a href="/#contact" class="nav-link scrollto"><i class="bx bx-chat"></i> <span>Contact</span></a></li>
             </ul>
         </nav><!-- .nav-menu -->
     </header><!-- End Header -->
@@ -72,7 +75,7 @@
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="d-flex flex-column justify-content-center">
             <div class="container" data-aos="zoom-in" data-aos-delay="100">
-                <h1>Ricardo Gonçalves</h1>
+                <p class="hero-title">Ricardo Gonçalves</p>
                 <p>I'm <span class="typed" data-typed-items="Developer, Freelancer, Entrepreneur, Creative, Dreamer"></span></p>
                 <div class="social-links">
                     <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -94,13 +97,17 @@
         <?php
             $sections = HOMEPAGE == $file_name ?
                 array(
-                    "about" => file_get_contents("files/about/about.html"),
-                    "facts" => file_get_contents("files/facts/facts.html"),
-                    "skills" => file_get_contents("files/skills/skills.html"),
+                    // "about" => file_get_contents("files/about/about.html"),
+                    // "facts" => file_get_contents("files/facts/facts.html"),
+                    // "skills" => file_get_contents("files/skills/skills.html"),
+                    // "portfolio" => file_get_contents("files/portfolio/portfolio.html"),
+                    "projects" => file_get_contents("files/projects/projects.html"),
+                    // "services" => file_get_contents("files/services/services.html"),
                     "resume" => file_get_contents("files/resume/resume.html"),
-                    "portfolio" => file_get_contents("files/portfolio/portfolio.html"),
-                    "services" => file_get_contents("files/services/services.html"),
-                    "testimonials" => file_get_contents("files/testimonials/testimonials.html"),
+                    // "publications" => file_get_contents("files/publications/publications.html"),
+                    "awards-publications" => file_get_contents("files/awards-publications/awards-publications.html"),
+                    // "testimonials" => file_get_contents("files/testimonials/testimonials.html"),
+                    "contribute" => file_get_contents("files/contribute/contribute.html"),
                     "contact" => file_get_contents("files/contact/contact.html")) :
                 array($file_name => $html);
             
