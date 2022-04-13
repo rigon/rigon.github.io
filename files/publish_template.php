@@ -137,7 +137,7 @@
                 <a href="#" class="mail-send"><i class="bx bx-mail-send"></i></a>
             </div>
             <div class="copyright">
-                &copy; Copyright <strong><span>rigon.tk</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>rigon.tk</span></strong>. All Rights Reserved - <a href="?login">Login</a>
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
