@@ -78,13 +78,13 @@
                 <p class="hero-title">Ricardo Gonçalves</p>
                 <p>I'm <span class="typed" data-typed-items="Developer, Freelancer, Entrepreneur, Creative, Dreamer"></span></p>
                 <div class="social-links">
-                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                    <a href="#" class="github"><i class="bx bxl-github"></i></a>
-                    <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
-                    <a href="#" class="discord"><i class="bx bxl-discord"></i></a>
-                    <a href="#" class="patreon"><i class="bx bxl-patreon"></i></a>
-                    <a href="#" class="mail-send"><i class="bx bx-mail-send"></i></a>
+                    <!-- <a href="https://twitter.com/ri_gon" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                    <a href="https://www.linkedin.com/in/rigon" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/rigon" class="github"><i class="bx bxl-github"></i></a>
+                    <!-- <a href="https://www.youtube.com/user/ricargoncalves" class="youtube"><i class="bx bxl-youtube"></i></a> -->
+                    <!-- <a href="https://discord.gg/e2PW7VEj" class="discord"><i class="bx bxl-discord"></i></a> -->
+                    <a href="https://www.patreon.com/rigon" class="patreon"><i class="bx bxl-patreon"></i></a>
+                    <a href="mailto:ricardompgoncalves@gmail.com" class="mail-send"><i class="bx bx-mail-send"></i></a>
                 </div>
                 <div class="social-links">
                     <button class="btn btn-primary">Buy me a coffee! <i class="bx bxs-coffee-togo"></i></button>
@@ -128,13 +128,13 @@
             <h3>Ricardo Gonçalves</h3>
             <p>Worker, active, committed. I like new challenges!</p>
             <div class="social-links">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                <a href="#" class="github"><i class="bx bxl-github"></i></a>
-                <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
-                <a href="#" class="discord"><i class="bx bxl-discord"></i></a>
-                <a href="#" class="patreon"><i class="bx bxl-patreon"></i></a>
-                <a href="#" class="mail-send"><i class="bx bx-mail-send"></i></a>
+                <!-- <a href="https://twitter.com/ri_gon" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                <a href="https://www.linkedin.com/in/rigon" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/rigon" class="github"><i class="bx bxl-github"></i></a>
+                <!-- <a href="https://www.youtube.com/user/ricargoncalves" class="youtube"><i class="bx bxl-youtube"></i></a> -->
+                <!-- <a href="https://discord.gg/e2PW7VEj" class="discord"><i class="bx bxl-discord"></i></a> -->
+                <a href="https://www.patreon.com/rigon" class="patreon"><i class="bx bxl-patreon"></i></a>
+                <a href="mailto:ricardompgoncalves@gmail.com" class="mail-send"><i class="bx bx-mail-send"></i></a>
             </div>
             <div class="copyright">
                 &copy; Copyright <strong><span>rigon.tk</span></strong>. All Rights Reserved - <a href="?login">Login</a>
