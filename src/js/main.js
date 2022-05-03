@@ -151,3 +151,31 @@ window.addEventListener('load', () => {
         mirror: false
     })
 });
+
+
+// Submit contact form
+let contactForm = document.getElementById("contact-form");
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let elmLoading = select(".contact .php-email-form .loading");
+    let elmSent = select(".contact .php-email-form .sent-message");
+    let elmError = select(".contact .php-email-form .error-message");
+    
+    let formData = new FormData(contactForm);
+    let method = contactForm.getAttribute("method");
+    let action = contactForm.getAttribute("action");
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === xhr.DONE) {
+            let elmMsg = (xhr.status === 200 ? elmSent : elmError);
+            elmLoading.style.display = "none";
+            elmMsg.innerText = xhr.responseText;
+            elmMsg.style.display = "block";
+            // Hide back the message
+            setTimeout(() => elmMsg.style.display = "none", 5000);
+        }
+    }
+    elmLoading.style.display = "block";
+    xhr.open(method, action, true);
+    xhr.send(formData);
+}, false);
