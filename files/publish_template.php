@@ -86,8 +86,8 @@
                     <a href="https://www.patreon.com/rigon" class="patreon"><i class="bx bxl-patreon"></i></a>
                     <a href="mailto:ricardompgoncalves@gmail.com" class="mail-send"><i class="bx bx-mail-send"></i></a>
                 </div>
-                <div class="social-links">
-                    <button class="btn btn-primary">Buy me a coffee! <i class="bx bxs-coffee-togo"></i></button>
+                <div class="action-button">
+                    <a href="#contribute" class="btn btn-primary">Buy me a coffee! <i class="bx bxs-coffee-togo"></i></a>
                 </div>
             </div>
         </section><!-- End Hero -->
