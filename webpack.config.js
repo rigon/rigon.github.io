@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const Dotenv = require('dotenv-webpack');
 const path = require("path");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     // Define the entry points of our application (can be multiple for different sections of a website)
@@ -12,7 +12,7 @@ module.exports = {
     // Define the destination directory and filenames of compiled resources
     output: {
         filename: "[name].js",
-        path: path.resolve(__dirname, "./files/dist")
+        path: path.resolve(__dirname, "build/dist")
     },
 
     // Define development options

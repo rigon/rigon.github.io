@@ -1,42 +1,20 @@
-<?php
-/**
- * GLOBAL VARIABLES
- * ================
- * SITE_NAME		- name of the website
- * $base_file_name	- name of the file, all revision files have the same base filename
- * $file_name		- filename of the current file
- * $file_revisions	- list of revisions to the file
- * $file_readonly	- flag indicating if the file is read only
- * $file_mode		- mode of the file (view, edit or published)
- * $file_contents	- contents of the file
- * $file_css		- list of CSS snippets
- * $list_files		- list of attached files
- * $url_files		- URL to the files
- * $baseurlapp		- base URL for the application, i. e. URL without the filename
- * $baseurl			- URL with the filename
- * $html			- HTML of the published version of the file
- * $max_upload		- Maximum size for uploading data
- */
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title><?php echo SITE_NAME; ?> - <?php echo $file_name; ?></title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>Ricardo Gonçalves</title>
+    <meta content="Ricardo Gonçalves homepage" name="description">
+    <meta content="Ricardo Gonçalves homepage" name="keywords">
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Template Main CSS File -->
-    <link href="/files/dist/main.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <?php foreach($file_css as $css) { echo "<style type=\"text/css\">$css</style>"; } ?>
+    <link href="dist/main.css" rel="stylesheet">
 
     <!-- =======================================================
     * Template Name: MyResume - v4.7.0
@@ -71,7 +49,7 @@
         </nav><!-- .nav-menu -->
     </header><!-- End Header -->
 
-    <?php if(HOMEPAGE == $file_name) { ?>
+    {{#if isHomepage}}
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="d-flex flex-column justify-content-center">
             <div class="container" data-aos="zoom-in" data-aos-delay="100">
@@ -91,35 +69,17 @@
                 </div>
             </div>
         </section><!-- End Hero -->
-    <?php } ?>
+    {{/if}}
 
     <main id="main">
-        <?php
-            $sections = HOMEPAGE == $file_name ?
-                array(
-                    // "about" => file_get_contents("files/about/about.html"),
-                    // "facts" => file_get_contents("files/facts/facts.html"),
-                    // "skills" => file_get_contents("files/skills/skills.html"),
-                    // "portfolio" => file_get_contents("files/portfolio/portfolio.html"),
-                    "projects" => file_get_contents("files/projects/projects.html"),
-                    // "services" => file_get_contents("files/services/services.html"),
-                    "resume" => file_get_contents("files/resume/resume.html"),
-                    // "publications" => file_get_contents("files/publications/publications.html"),
-                    "awards-publications" => file_get_contents("files/awards-publications/awards-publications.html"),
-                    // "testimonials" => file_get_contents("files/testimonials/testimonials.html"),
-                    "contribute" => file_get_contents("files/contribute/contribute.html"),
-                    "contact" => file_get_contents("files/contact/contact.html")) :
-                array($file_name => $html);
-            
-            foreach ($sections as $section_name => $section_content){
-                echo "<!-- ======= $section_name section ======= -->";
-                echo "<section id=\"$section_name\" class=\"$section_name\">";
-                echo "    <div class=\"container\" data-aos=\"fade-up\">";
-                echo $section_content;
-                echo "    </div>";
-                echo "</section><!-- end $section_name section -->";
-            }
-        ?>
+        {{#each sections}}
+            <!-- ======= {{ name }} section ======= -->
+            <section id="{{ name }}" class="{{ name }}">
+                <div class="container" data-aos="fade-up">
+                    {{{ data }}}
+                </div>
+            </section><!-- end {{ name }} section -->
+        {{/each}}
     </main>
 
     <!-- ======= Footer ======= -->
@@ -153,7 +113,7 @@
     <a href="#" class="btn btn-primary back-to-top"><i class="bx bx-up-arrow"></i></a>
 
     <!-- Template Main JS File -->
-    <script src="/files/dist/main.js"></script>
+    <script src="dist/main.js"></script>
 
 </body>
 

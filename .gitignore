@@ -2,5 +2,5 @@
 .vscode
 .DS_Store
 node_modules
-files/dist/
+build/
 files.tar.gz

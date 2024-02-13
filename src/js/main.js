@@ -154,28 +154,37 @@ window.addEventListener('load', () => {
 
 
 // Submit contact form
-let contactForm = document.getElementById("contact-form");
-contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    let elmLoading = select(".contact .php-email-form .loading");
-    let elmSent = select(".contact .php-email-form .sent-message");
-    let elmError = select(".contact .php-email-form .error-message");
-    
-    let formData = new FormData(contactForm);
-    let method = contactForm.getAttribute("method");
-    let action = contactForm.getAttribute("action");
-    let xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === xhr.DONE) {
-            let elmMsg = (xhr.status === 200 ? elmSent : elmError);
-            elmLoading.style.display = "none";
-            elmMsg.innerText = xhr.responseText;
-            elmMsg.style.display = "block";
-            // Hide back the message
-            setTimeout(() => elmMsg.style.display = "none", 5000);
+var contactForm = document.getElementById("contact-form");
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var msgLoading = select(".contact .php-email-form .loading");
+    var msgSent = select(".contact .php-email-form .sent-message");
+    var msgError = select(".contact .php-email-form .error-message");
+
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: contactForm.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
         }
-    }
-    elmLoading.style.display = "block";
-    xhr.open(method, action, true);
-    xhr.send(formData);
-}, false);
+    }).then(response => {
+        msgLoading.style.display = "none";
+        if (response.ok) {
+            msgSent.style.display = "block";
+            contactForm.reset();
+        } else {
+            msgError.style.display = "block";
+            response.json().then(data => {
+                msgError.innerHTML = Object.hasOwn(data, 'errors') ?
+                    data["errors"].map(error => error["message"]).join(", ") :
+                    "Oops! There was a problem submitting your form";
+            })
+        }
+    }).catch(error => {
+        msgError.innerHTML = "Oops! There was a problem submitting your form";
+    });
+    msgLoading.style.display = "block";
+    msgSent.style.display = "none";
+    msgError.style.display = "none";
+});

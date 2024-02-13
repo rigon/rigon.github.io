@@ -1,28 +1,29 @@
-<div class="section-title">
-    <h2>Contact</h2>
-</div>
+# Contact
 
 <div class="row mt-1">
 
     <div class="col-lg-4">
+
         <div class="info">
             <div class="address">
-                <i class="bi bi-geo-alt"></i>
+                <i class="bx bx-map"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>England, United Kingdom</p>
             </div>
 
             <div class="email">
-                <i class="bi bi-envelope"></i>
+                <i class="bx bx-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>ricardompgoncalves@gmail.com</p>
             </div>
 
+            <!--
             <div class="phone">
-                <i class="bi bi-phone"></i>
+                <i class="bx bx-phone"></i>
                 <h4>Call:</h4>
                 <p>+1 5589 55488 55s</p>
             </div>
+            -->
 
         </div>
 
@@ -30,7 +31,7 @@
 
     <div class="col-lg-8 mt-5 mt-lg-0">
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <form id="contact-form" class="php-email-form" action="https://formspree.io/f/meqygqyp" method="post" role="form">
             <div class="row">
                 <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
