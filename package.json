@@ -34,7 +34,7 @@
     "handlebars": "^4.7.8",
     "isotope-layout": "^3.0.6",
     "mime-types": "^2.1.32",
-    "mini-css-extract-plugin": "^2.2.0",
+    "mini-css-extract-plugin": "^2.8.0",
     "node-sass": "^6.0.1",
     "pagedown": "^1.1.0",
     "path": "^0.12.7",
