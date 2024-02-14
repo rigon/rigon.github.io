@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run static && npm run wpbuild",
+    "dev": "webpack --config webpack.config.js --mode development --watch",
     "pack": "npm run build && cd build && tar zcvf ../files.tar.gz *",
     "images": "node ./bin/images.js",
     "serve": "serve ./build/",
     "static": "node ./bin/staticgen.js",
-    "wpbuild": "webpack --config webpack.config.js --mode production",
-    "wpdev": "webpack --config webpack.config.js --mode development --watch"
+    "wpbuild": "webpack --config webpack.config.js --mode production"
   },
   "author": "Ricardo Gonçalves",
   "license": "MIT",
