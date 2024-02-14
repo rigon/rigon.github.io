@@ -3,6 +3,7 @@ import 'bootstrap';
 import 'boxicons';
 import AOS from 'aos';
 import Typed from 'typed.js';
+import Isotope from 'isotope-layout';
 
 // Load Styles
 import '../scss/main.scss';
@@ -139,6 +140,36 @@ if (typed) {
         backDelay: 2000
     });
 }
+
+/**
+ * Projects isotope and filter
+ */
+window.addEventListener('load', () => {
+    let projectsContainer = select('.projects-container');
+    if (projectsContainer) {
+        let projectsIsotope = new Isotope(projectsContainer, {
+            itemSelector: '.projects-item'
+        });
+
+        let projectsFilters = select('#projects-filters li', true);
+
+        on('click', '#projects-filters li', function (e) {
+            e.preventDefault();
+            projectsFilters.forEach(function (el) {
+                el.classList.remove('filter-active');
+            });
+            this.classList.add('filter-active');
+
+            projectsIsotope.arrange({
+                filter: this.getAttribute('data-filter')
+            });
+            projectsIsotope.on('arrangeComplete', function () {
+                AOS.refresh()
+            });
+        }, true);
+    }
+
+});
 
 /**
  * Animation on scroll
