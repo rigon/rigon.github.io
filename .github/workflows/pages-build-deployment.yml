@@ -32,6 +32,8 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Use Node.js
         uses: actions/setup-node@v4
+        with:
+          node-version: 16
       - name: Build with NPM
         run: |
           npm install
