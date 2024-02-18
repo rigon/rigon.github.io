@@ -549,7 +549,8 @@ section blockquote {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  //background: rgba(69, 80, 91, 0.8);
+  border: 1px solid $light;
 }
 .projects .projects-wrap::before {
   content: "";

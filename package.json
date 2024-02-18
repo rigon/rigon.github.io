@@ -6,9 +6,9 @@
   "scripts": {
     "build": "npm run static && npm run wpbuild",
     "dev": "webpack --config webpack.config.js --mode development --watch",
-    "pack": "npm run build && cd build && tar zcvf ../files.tar.gz *",
+    "pack": "npm run build && cd _site && tar zcvf ../files.tar.gz *",
     "images": "node ./bin/images.js",
-    "serve": "serve ./build/",
+    "serve": "serve ./_site/",
     "static": "node ./bin/staticgen.js",
     "wpbuild": "webpack --config webpack.config.js --mode production"
   },

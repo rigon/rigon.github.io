@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Album RoyalSlider</title>
+
+		<script src="jquery-1.8.3.min.js"></script>
+		<script src="jquery.royalslider.min.js"></script>
+		<script src="jquery.royalslider.album.js"></script>
+		
+		<link href="royalslider.css" rel="stylesheet">
+		<link href="reset.css" rel="stylesheet">
+		<link href="rs-default.css" rel="stylesheet">
+
+		<!--
+			var gallery1 = [
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/1.jpg",
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/2.jpg",
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/3.jpg",
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/4.jpg",
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/5.jpg",
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/6.jpg",
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/7.jpg",
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/8.jpg",
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/9.jpg",
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/10.jpg",
+				"http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/11.jpg"
+			];
+			
+			var gallery2 = [
+				"http://hdwallpaper2013.com/wp-content/uploads/2013/02/Download-Forest-Background-Images-HD-Wallpaper.jpg",
+				"http://hdwallpaper2013.com/wp-content/uploads/2013/02/Beautiful-Nature-Wallpapers-for-Desktop-HD-Wallpaper.jpg",
+				"http://hdwallpaper2013.com/wp-content/uploads/2013/02/Beautiful-Nature-Cool-Pictures-HD-Wallpaper.jpg",
+				"http://hdwallpaper2013.com/wp-content/uploads/2013/02/Forest-Background-Images-HD-Wallpaper.jpg",
+				"http://hdwallpaper2013.com/wp-content/uploads/2013/02/Download-Cloud-Background-Images-HD-Wallpaper.jpg",
+				"http://hdwallpaper2013.com/wp-content/uploads/2013/02/Cool-Wallpapers-Beautiful-Nature-HD-Wallpaper.jpg",
+				"http://hdwallpaper2013.com/wp-content/uploads/2013/02/Beautiful-Nature-Cool-Images-HD-Wallpaper.jpg"
+			];
+		-->
+		
+		<style type="text/css">
+			body, html {
+				background-color: #151515;
+				margin: -1px 0px 0px 0px;
+				padding: 0;
+				overflow: hidden;
+			}
+			.royalSlider {
+				width: 100%;
+				height: 100%;
+				-webkit-user-select: none;
+				-moz-user-select: none;  
+				user-select: none;
+				margin: 0px auto 0px auto;
+			}
+		</style>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				royalGalleryAlbum("#gallery");
+			});
+		</script>
+	</head>
+	<body>
+		<div id="gallery" class="royalSlider rsDefault">
+			<p title="Default Gallery">
+				<a class="rsImg" data-rsw="400" data-rsh="500" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/1.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/1.jpg">Vincent van Gogh - Still Life: Vase with Twelve Sunflowers<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/1.jpg" /></a>
+				<a class="rsImg" data-rsw="632" data-rsh="500" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/2.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/2.jpg">Vincent van Gogh - The Starry Night<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/2.jpg" /></a>
+				<a class="rsImg" data-rsw="336" data-rsh="500" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/3.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/3.jpg">Leonardo da Vinci - Mona Lisa<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/3.jpg" /></a>
+				<a class="rsImg" data-rsw="417" data-rsh="500" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/4.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/4.jpg">Grant DeVolson Wood - American Gothic<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/4.jpg" /></a>
+				<a class="rsImg" data-rsw="601" data-rsh="500" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/5.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/5.jpg">Rembrandt - The Night Watch<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/5.jpg" /></a>
+				<a class="rsImg" data-rsw="350" data-rsh="500" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/6.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/6.jpg">Johannes Vermeer - Girl with a Pearl Earring<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/6.jpg" /></a>
+				<a class="rsImg" data-rsw="596" data-rsh="500" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/7.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/7.jpg">Paul Cezanne - Card Players<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/7.jpg" /></a>
+				<a class="rsImg" data-rsw="700" data-rsh="414" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/8.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/8.jpg">Ilya Repin - Reply of the Zaporozhian Cossacks<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/8.jpg" /></a>
+				<a class="rsImg" data-rsw="470" data-rsh="500" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/9.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/9.jpg">Ivan Aivazovsky - Chesmabattle<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/9.jpg" /></a>
+				<a class="rsImg" data-rsw="500" data-rsh="500" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/10.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/10.jpg">Gustav Klimt - The Kiss<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/10.jpg" /></a>
+				<a class="rsImg" data-rsw="700" data-rsh="475" data-rsBigImg="http://dimsemenov.com/plugins/royal-slider/img/paintings/11.jpg" href="http://dimsemenov.com/plugins/royal-slider/img/paintings/700x500/11.jpg">Ivan Shishkin - Morning in a Pine Forest<img width="96" height="72" class="rsTmb" src="http://dimsemenov.com/plugins/royal-slider/img/paintings/t/11.jpg" /></a>
+			</p>
+			<p title="Amazing Wallpapers">
+				<a class="rsImg" href="http://hdwallpaper2013.com/wp-content/uploads/2013/02/Download-Forest-Background-Images-HD-Wallpaper.jpg">Forest<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://hdwallpaper2013.com/wp-content/uploads/2013/02/Download-Forest-Background-Images-HD-Wallpaper.jpg" /></a>
+				<a class="rsImg" href="http://hdwallpaper2013.com/wp-content/uploads/2013/02/Beautiful-Nature-Wallpapers-for-Desktop-HD-Wallpaper.jpg">Bench watching the Sea<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://hdwallpaper2013.com/wp-content/uploads/2013/02/Beautiful-Nature-Wallpapers-for-Desktop-HD-Wallpaper.jpg" /></a>
+				<a class="rsImg" href="http://hdwallpaper2013.com/wp-content/uploads/2013/02/Beautiful-Nature-Cool-Pictures-HD-Wallpaper.jpg">Beautiful Nature<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://hdwallpaper2013.com/wp-content/uploads/2013/02/Beautiful-Nature-Cool-Pictures-HD-Wallpaper.jpg" /></a>
+				<a class="rsImg" href="http://hdwallpaper2013.com/wp-content/uploads/2013/02/Forest-Background-Images-HD-Wallpaper.jpg">Mill on the River<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://hdwallpaper2013.com/wp-content/uploads/2013/02/Forest-Background-Images-HD-Wallpaper.jpg" /></a>
+				<a class="rsImg" href="http://hdwallpaper2013.com/wp-content/uploads/2013/02/Download-Cloud-Background-Images-HD-Wallpaper.jpg">Clouds<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://hdwallpaper2013.com/wp-content/uploads/2013/02/Download-Cloud-Background-Images-HD-Wallpaper.jpg" /></a>
+				<a class="rsImg" href="http://hdwallpaper2013.com/wp-content/uploads/2013/02/Cool-Wallpapers-Beautiful-Nature-HD-Wallpaper.jpg">Hills<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://hdwallpaper2013.com/wp-content/uploads/2013/02/Cool-Wallpapers-Beautiful-Nature-HD-Wallpaper.jpg" /></a>
+				<a class="rsImg" href="http://hdwallpaper2013.com/wp-content/uploads/2013/02/Beautiful-Nature-Cool-Images-HD-Wallpaper.jpg">Island<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://hdwallpaper2013.com/wp-content/uploads/2013/02/Beautiful-Nature-Cool-Images-HD-Wallpaper.jpg" /></a>
+			</p>
+			<p title="Stars & Space">
+				<a class="rsImg" href="http://apod.nasa.gov/apod/image/1403/NGC1333_Howard23_1500.jpg">NGC 1333 Stardust<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://apod.nasa.gov/apod/image/1403/NGC1333_Howard23_1500.jpg" /></a>
+				<a class="rsImg" href="http://apod.nasa.gov/apod/image/1403/ic2944_vanderhaven_1280.jpg">Globules in the Running Chicken Nebula<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://apod.nasa.gov/apod/image/1403/ic2944_vanderhaven_1280.jpg" /></a>
+				<a class="rsImg" href="http://apod.nasa.gov/apod/image/1402/m44franke1600.jpg">M44: The Beehive Cluster <img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://apod.nasa.gov/apod/image/1402/m44franke1600.jpg" /></a>
+				<a class="rsImg" href="http://apod.nasa.gov/apod/image/1402/tarantula_peach_3007.jpg">The Cosmic Web of the Tarantula Nebula<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://apod.nasa.gov/apod/image/1402/tarantula_peach_3007.jpg" /></a>
+				<a class="rsImg" href="http://apod.nasa.gov/apod/image/1402/2014-01_DowntownAuriga-mbRBA.jpg">Downtown Auriga <img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://apod.nasa.gov/apod/image/1402/2014-01_DowntownAuriga-mbRBA.jpg" /></a>
+				<a class="rsImg" href="http://apod.nasa.gov/apod/image/1402/IC1805_HaSHO_gonzalez2000.jpg">IC 1805: Light from the Heart<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://apod.nasa.gov/apod/image/1402/IC1805_HaSHO_gonzalez2000.jpg" /></a>
+				<a class="rsImg" href="http://apod.nasa.gov/apod/image/1402/HeartSoul_Orazi_1280.jpg">The Heart and Soul Nebulas<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://apod.nasa.gov/apod/image/1402/HeartSoul_Orazi_1280.jpg" /></a>
+				<a class="rsImg" href="http://apod.nasa.gov/apod/image/1402/hh24_schmidt_1505.jpg">A Particle Beam Jet forms HH 24<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://apod.nasa.gov/apod/image/1402/hh24_schmidt_1505.jpg" /></a>
+				<a class="rsImg" href="http://apod.nasa.gov/apod/image/1402/monument_pacholka_1400.jpg">Mars and Orion over Monument Valley <img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://apod.nasa.gov/apod/image/1402/monument_pacholka_1400.jpg" /></a>
+			</p>
+			<p title="Cities">
+				<a class="rsImg" href="http://upload.wikimedia.org/wikipedia/commons/d/dc/Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg">Skyscrapers of Shinjuku<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://upload.wikimedia.org/wikipedia/commons/d/dc/Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg" /></a>
+				<a class="rsImg" href="http://upload.wikimedia.org/wikipedia/commons/4/44/View_of_the_Empire_State_Building_from_the_Rockefeller_Center_observation_deck_NYC_-_18_August_2009.jpg">View of the Empire State Building from the Rockefeller Center observation<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://upload.wikimedia.org/wikipedia/commons/4/44/View_of_the_Empire_State_Building_from_the_Rockefeller_Center_observation_deck_NYC_-_18_August_2009.jpg" /></a>
+				<a class="rsImg" href="http://glamgrid.com/wp-content/uploads/2013/09/New-York-and-London-are-the-Most-Important-Cities-for-the-Super-Rich-1.jpeg">New-York<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://glamgrid.com/wp-content/uploads/2013/09/New-York-and-London-are-the-Most-Important-Cities-for-the-Super-Rich-1.jpeg" /></a>
+				<a class="rsImg" href="http://0.tqn.com/d/hospitality/1/0/E/-/-/-/CC_RiverView.jpg">Buildings closer to the Lake<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://0.tqn.com/d/hospitality/1/0/E/-/-/-/CC_RiverView.jpg" /></a>
+				<a class="rsImg" href="http://upload.wikimedia.org/wikipedia/commons/8/8d/Perth_skyline_at_night.jpg">Perth skyline at night<img width="96" height="72" class="rsTmb" src="http://www.rigon.tk/thumbnailify/index.php?f=http://upload.wikimedia.org/wikipedia/commons/8/8d/Perth_skyline_at_night.jpg" /></a>
+				<a class="rsImg" href="http://hd-desktop.net/albums/City/Cityscape_Wallpapers_-_City_Skylines_-_Architecture_1920x1080_-_0063.jpg">City Skylines<img width="96" height="72" class="rsTmb" src="http://hd-desktop.net/albums/City/Cityscape_Wallpapers_-_City_Skylines_-_Architecture_1920x1080_-_0063.jpg" /></a>
+			</p>
+		</div>
+	</body>
+</html>

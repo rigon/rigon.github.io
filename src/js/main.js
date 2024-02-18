@@ -148,7 +148,11 @@ window.addEventListener('load', () => {
     let projectsContainer = select('.projects-container');
     if (projectsContainer) {
         let projectsIsotope = new Isotope(projectsContainer, {
-            itemSelector: '.projects-item'
+            itemSelector: '.projects-item',
+            percentPosition: true,
+            masonry: {
+              columnWidth: '.grid-sizer'
+            }
         });
 
         let projectsFilters = select('#projects-filters li', true);

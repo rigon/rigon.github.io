@@ -12,7 +12,7 @@ module.exports = {
     // Define the destination directory and filenames of compiled resources
     output: {
         filename: "[name].js",
-        path: path.resolve(__dirname, "build/dist")
+        path: path.resolve(__dirname, "_site/dist")
     },
 
     // Define development options

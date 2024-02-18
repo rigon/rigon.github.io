@@ -19,6 +19,6 @@ If you prefer one-time donation, here is my PayPal or Revolut.
 - [Revolut](https://www.revolut.me/rigon)
 - [Credit or Debit Card](https://www.revolut.me/rigon/card-payment)
 
-## Share 
+## Share
 
 If supporting me monetarily is not the best fit for you at the moment, please consider share my work with your friends, colleagues or social networks. It is very important as well so we can help inspire others.
