@@ -11,15 +11,11 @@
 ## Professional Experience
 
 - **Software Engineer**
-
-  *2019 - 2021*
-
+*2019 - 2021*
   **BOXARR, Bristol, United Kingdom**
 
 - **Software Engineer**
-
   *2016 - 2019*
-
   **HealthySystems, Porto, Portugal**
 
   Worked mainly with security concepts (like certificates, signatures and PKI), authentication mechanisms, data processing and Web and Desktop development.
