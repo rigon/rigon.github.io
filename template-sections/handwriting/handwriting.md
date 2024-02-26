@@ -12,7 +12,7 @@ img { border: 1px solid black; }
 ## Abstract
 
 
-<img style="float: right; border: none;" src="handwriting/logo.png">
+<img style="float: right; border: none;" src="/handwriting/logo.png">
 
 Handwritten signature recognition is still the most widely accepted method to validate paper based documents. However, in the digital world, is hard to distinguish a scanned document with real handwritten signature from a forged document. A document can be forged with a copy of the signature made by the same person on another document and simply ``pasted'' into the forged one. Digital documents can be protected with digital signatures and certificates, but they are not always well accepted by general public. A document with a handwritten signature can be more accepted than a document digitally certified. Unfortunately, this imposes restrictions in the use of digital documents, requiring that signed documents continue to be paper-based, making all process more expensive and slower.
 
