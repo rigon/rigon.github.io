@@ -43,7 +43,7 @@
     "postcss-preset-env": "^6.7.0",
     "sass-loader": "^12.1.0",
     "serve": "^13.0.2",
-    "sharp": "^0.29.0",
+    "sharp": "^0.33.3",
     "style-loader": "^3.2.1",
     "trash": "^7.1.1",
     "typed.js": "^2.0.12",
